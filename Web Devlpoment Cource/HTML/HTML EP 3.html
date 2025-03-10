@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML EP 3</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <h1>Payment Form</h1>
+            <fieldset>
+                <h2>Contact Information</h2>
+                <p>Name:* <input type="text" name="name" id="" required></p>
+                <fieldset>
+                    <legend>Gender*</legend>
+                    <p>
+                        Male <input type="radio" name="gender" id="">
+                        Female <input type="radio" name="gender" id="">
+                        Other <input type="radio" name="gender" id="">
+                    </p>
+                </fieldset>
+                <p>Address: <textarea name="add" id="" cols="100" rows="10"></textarea></p>
+                <p>Email: <input type="email" name="email" id=""></p>
+                <p>Pincode: <input type="number" name="pincode" id=""></p>
+            </fieldset>
+            <fieldset>
+                <h2>Payment Details</h2>
+                <p>Card Type: 
+                    <select name="card_type" id="">
+                        <option value="">--Select a Card Type--</option>
+                        <option value="Card_1">Card 1</option>
+                        <option value="Card_2">Card 2</option>
+                        <option value="Card_3">Card 3</option>
+                        <option value="Card_4">Card 4</option>
+                    </select>
+                </p>
+                <p>Card Number: <input type="number" name="card_number" id=""></p>
+                <p>Expiration Date: <input type="date" name="exp_date" id=""></p>
+                <p>CVV: <input type="password" name="cvv" id=""></p>
+            </fieldset>
+            <input type="submit" value="Pay Now">
+            <input type="reset" value="Reset">
+    </fieldset>
+    </form>
+</body>
+</html>

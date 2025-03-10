@@ -1,0 +1,73 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    background-color: #ccc;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section{
+    display: block;
+}
+
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+h3{
+    margin: 0 0 8px 0;
+}
+p{
+    margin: 0 0 20px 0;
+}
+#fluid-wrap{
+    width: 70%;
+    margin: 60px auto;
+    padding: 20px;
+    background: #eee;
+    overflow: hidden;
+}
+#sidebar{
+    width: 35%;
+    float: left;
+}
+#sidebar ul{
+    list-style: none;
+}
+#sidebar ul li a{
+    color: red;
+    text-decoration: none;
+    padding: 3px 0;
+    display: block;
+}
+
+@media all and (min-width: 1001px){
+    #sidebar ul li a::after{
+        content: attr(data-email);
+        font-size: 11px;
+        font-style: italic;
+        color: #666;
+    }
+}
+
+@media all and (max-width: 1001px) and (min-width: 700px){
+    #sidebar ul li a::before{
+        content: "Email Id";
+        font-size: 10px;
+        font-style: italic;
+        color: #666;
+    }
+}
+
+
+#main-content{
+    width: 65%;
+    float: right;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z Index</title>
+    <style>
+        #l1{
+            z-index: 2;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 250px;
+            height: 120px;
+            background-color: green;
+            border: 5px solid blue;
+            padding: 5px;
+        }
+        #l2{
+            /* z-index: 5; */
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 250px;
+            height: 120px;
+            background-color:blueviolet;
+            border: 5px solid blue;
+            padding: 5px;
+        }
+        #l3{
+            /* z-index: 1; */
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            width: 250px;
+            height: 120px;
+            background-color:yellow;
+            border: 5px solid blue;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="l1">
+        <h1>Layer 1</h1>
+    </div>
+    <div id="l2">
+        <h1>Layer 2</h1>
+    </div>
+    <div id="l3">
+        <h1>Layer 3</h1>
+    </div>
+</body>
+</html>

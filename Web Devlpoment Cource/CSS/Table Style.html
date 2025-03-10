@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Style</title>
+    <style>
+        table,td,th,tr{
+            border: 2px solid black;
+            border-collapse:collapse;
+            padding: 10px;
+            border-spacing: 5px;
+        }
+        th{
+            background-color: aqua;
+        }
+        td{
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Theory</th>
+                <th>Practical</th>
+                <th>Total Marks</th>
+                <th>Grades</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>English</th>
+                <td>75</td>
+                <td>50</td>
+                <td>125</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <th>Marathi</th>
+                <td>75</td>
+                <td>50</td>
+                <td>125</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <th>BK</th>
+                <td>75</td>
+                <td>50</td>
+                <td>125</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <th>AI</th>
+                <td>75</td>
+                <td>50</td>
+                <td>125</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <th>SPM</th>
+                <td>75</td>
+                <td>50</td>
+                <td>125</td>
+                <td>A</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th colspan="5">Result : Pass</th>
+        </tfoot>
+        </table>
+    </div>
+</body>
+</html>
