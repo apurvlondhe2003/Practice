@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-image: url('Web Devlpoment Cource/img/Backgraound.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 100%;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .main{
+            /* border: 2px solid blue; */
+            padding-top: 10%;
+            padding-bottom: 10%;
+            overflow: hidden;
+        }
+        .ul{
+            /* border: 2px solid rgb(255, 0, 0); */
+            justify-items: center;
+            font-size: 35px;
+        }
+        .np{
+            /* border: 2px solid green; */
+            justify-items: center;
+        }
+        .name{
+            /* border: 2px solid #ffee00; */
+            width: 100%;
+            height: 75px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            text-align: center;
+        }
+        label{
+            /* border: 2px solid greenyellow; */
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+        }
+        .fp, .c, .rm{
+            /* border: 2px solid black; */
+            padding: 10px;
+            cursor: pointer;
+        }
+        .fp{
+            color: white;
+        }
+        .fp:hover{
+            color: #326FEA;
+        }
+        #sub{
+            /* border: 2px solid rgb(255, 0, 234); */
+            width: 250px;
+            height: 50px;
+            color: #326FEA;
+            font-weight: bolder;
+            font-size: 30px;
+            background-color: #FE0096;
+            margin: 20px;
+            border: none;
+            cursor: pointer;
+        }
+        #sub:hover{
+            color: #FE0096;
+            background-color: #326FEA;
+        }
+        .a{
+            border: 2px solid blue;
+            width: 250px;
+            height: 100px;
+            text-align: center;
+            margin: 5px;
+            padding: 5px;
+            color: #326FEA; 
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="main">
+            <div class="ul">
+                <img src="/Web Devlpoment Cource/avatar.webp" width="100px" height="100px" alt="profile-img">
+                <p>User Login</p>
+            </div>
+            <div class="np">
+                <div class="name">
+                    <input class="a" type="text" required placeholder="Enter Your Id">
+                    <input class="a" type="password" required placeholder="Enter Your Password">
+                </div>
+                <label>
+                    <input type="checkbox" required>
+                    <p class="rm">Remember to me |</p>
+                    <a class="fp" href="#">| Forgate Password</a>
+                </label>
+                <input id="sub" type="submit" value="Submit">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
