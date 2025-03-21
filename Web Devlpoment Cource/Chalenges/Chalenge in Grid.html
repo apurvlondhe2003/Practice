@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chalenge in Grid</title>
+    <style>
+        .cont {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-gap: 20px;
+            grid-auto-rows: 650px;
+            grid-auto-columns: 100px;
+            text-align: center;
+            /* column-gap: 120px; */
+            /* display: grid;
+            border: 5px greenyellow solid;
+            grid-template-rows: repeat(5 1fr);
+            grid-gap: 20px;
+            grid-auto-rows: minmax(100px, auto);
+            grid-auto-columns: minmax(50px, auto);
+            column-gap: 120px; */
+        }
+
+        .cont1,
+        .cont2,
+        .cont3,
+        .cont4,
+        .cont5,
+        .cont6 {
+            display: grid;
+            /* grid-template-rows: repeat(12, 1fr); */
+            /* border: 5px solid yellow; */
+            border-radius: 5px;
+            /* background-color: aqua; */
+        }
+
+        .nest1,
+        .nest2,
+        .nest3,
+        .nest4,
+        .nest5,
+        .nest6 {
+            border: 5px solid white;
+            border-radius: 5px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="cont1">
+            <div class="nest1">1</div>
+        </div>
+        <div class="cont2">
+            <div class="nest2">2</div>
+            <div class="nest2">3</div>
+        </div>
+        <div class="cont3">
+            <div class="nest3">4</div>
+            <div class="nest3">5</div>
+            <div class="nest3">6</div>
+        </div>
+        <div class="cont4">
+            <div class="nest4">7</div>
+            <div class="nest4">8</div>
+            <div class="nest4">9</div>
+            <div class="nest4">10</div>
+        </div>
+        <div class="cont5">
+            <div class="nest5">11</div>
+            <div class="nest5">12</div>
+            <div class="nest5">13</div>
+            <div class="nest5">14</div>
+            <div class="nest5">15</div>
+            <div class="nest5">16</div>
+        </div>
+        <div class="cont6">
+            <div class="nest6">17</div>
+            <div class="nest6">18</div>
+            <div class="nest6">19</div>
+            <div class="nest6">20</div>
+            <div class="nest6">21</div>
+            <div class="nest6">22</div>
+            <div class="nest6">23</div>
+            <div class="nest6">24</div>
+            <div class="nest6">25</div>
+            <div class="nest6">26</div>
+            <div class="nest6">27</div>
+            <div class="nest6">28</div>
+        </div>
+    </div>
+</body>
+
+</html>
