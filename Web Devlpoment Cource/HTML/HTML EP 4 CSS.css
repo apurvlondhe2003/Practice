@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    margin: 0px;
+}
+
+header{
+    padding: 50px;
+    text-align: center;
+    background-color: #100315;
+    color: white;
+    
+}
+
+header h1{
+    font-size: 50px;
+}
+
+nav{
+    display: flex;
+    background-color: #333;
+    /* overflow: hidden; */
+}
+
+nav a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    float: left;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+nav a:hover{
+    background-color: aqua;
+}
+
+section{
+    text-align: center;
+    padding-top: 40px;
+    height: 100vh;
+}
+
+section:nth-child(odd){
+    background-color: rebeccapurple;
+}
+
+section:nth-child(even){
+    background-color: peru;
+}
+
+iframe{
+    padding: 0px 5px;
+}
+
+img{
+    padding: 0px 20px;
+}
+
+h2{
+    padding-bottom: 40px;
+}
+
+footer{
+    overflow: hidden;
+    background-color: #333;
+}
+
+footer a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    float: right;
+}
+
+section h4{
+    margin: 10px 130px;
+}
+
+.gif{
+    background-image: url("/Web Devlpoment Cource/img/Backgraound.jpg");
+    height: 20vw;
+    min-height: 100px;
+    border: 10px solid white;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 50%;
+    background-attachment: fixed;
+}
+
+
+.Login{
+    margin-left: auto;
+    background-color: red;
+}
+
+@media screen and (max-width: 700px) {
+    nav{
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0px;
+    }
+
+    .Login{
+        margin-left: 0;
+        background-color: red;
+    }
+}
