@@ -10,9 +10,29 @@
 <body>
 </body>
 <script>
+
+    // Create a Maggi
+    // Makes a Function 
     function cook(maggi, pani, pot) {
-        console.log("Your Maggie Is ready In " + maggi * 2 + "Minutes")
+        console.log("Your Maggie Is ready In " + maggi * 2 + " Minutes " + "Add Ingredints Used are: " + maggi + " Maggi " + pani + " Cupes Of Water " + "Using " + pot + " Pots")
     }
+    cook(4, 8, 2)
+
+
+
+    // Create a Sandwich
+    // Function Call 
+    let bread1 = prompt("Bread: ");
+    let veg1 = prompt("Veg: ");
+    let souce1 = prompt("Souce: ");
+
+    function sandwich(bread, veg, souce) {
+        let sand = bread + " Bread " + veg + " " + souce + " Sandwich Is Ready";
+        return sand;
+    }
+
+    let vegi = sandwich(bread1, veg1, souce1);
+    console.log(vegi)
 </script>
 
 </html>
