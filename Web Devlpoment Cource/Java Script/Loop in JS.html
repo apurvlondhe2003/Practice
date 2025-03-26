@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop in JS</title>
+</head>
+
+<body>
+</body>
+
+<script>
+    // For Loop
+    for (let i = 5; i < 51; i = i + 5) {
+        console.log("Teble Of 5 " + i)
+    }
+
+    // For If Loop
+    for (let i = 0; i < 20; i++) {
+        if (i % 2 == 0)
+            console.log("For If Loop: " + i)
+    }
+
+    // While Loop
+    let i = 10;
+    while (i >= 0) {
+        console.log("While Loop ")
+        i--
+    }
+
+    // Do While
+    let j = 0;
+    do {
+        console.log("Do While Loop")
+        j++
+    }
+    while (j < 10)
+
+    // For In Loop
+    // Object Loop
+    let animal = {
+        name: "Raj",
+        leg: 4
+    };
+    for (let as in animal) {
+        console.log(as, animal[as])
+    }
+
+    // Array Loop
+    let names = ["Name 1", "Name 2", "Name 3", "Name 4"]
+    for (let index in names) {
+        console.log(index, names[index])
+    }
+
+    // For Of Loop
+    for (let name of names) {
+        console.log(name)
+    }
+</script>
+
+</html>
